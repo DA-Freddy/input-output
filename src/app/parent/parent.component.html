@@ -1,0 +1,2 @@
+<h1>Kinder welche zuhause wohnen</h1>
+<app-child *ngFor="let child of children; let i = index;" [myName]="child" (moveOutEvent)="moveOutChild(i)"></app-child>
