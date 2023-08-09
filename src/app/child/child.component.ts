@@ -10,7 +10,7 @@ export class ChildComponent {
   @Input() myName !:string;
   @Output() moveOutEvent = new EventEmitter<void>();
 
-  moveOut(name: string) {
+  moveOut() {
     this.moveOutEvent.emit();
   }
 }
